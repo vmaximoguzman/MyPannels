@@ -1,0 +1,7 @@
+@mixin fuentes($size, $color, $style, $weight) {
+  font-family: "Ysabeau";
+  font-size: $size;
+  color: $color;
+  font-style: $style;
+  font-weight: $weight;
+}

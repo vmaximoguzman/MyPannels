@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.errorPage {
+  background-image: url("../../images/bgb.jpg");
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .gomenasai {
+    @include fuentes(90px, transparent, italic, 800);
+    -webkit-text-stroke: 4px #ff8000;
+  }
+
+  .errorMessage {
+    @include fuentes(32px, black, normal, 700);
+    letter-spacing: 2px;
+  }
+
+  .redirecting {
+    @include fuentes(19px, black, normal, 700);
+  }
+}
