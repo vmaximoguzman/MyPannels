@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { NavLink } from "react-router-dom";
-import logotipoProv from "../../images/logotipoProvisorio.jpg";
+import logotipo from "../../images/logotipo.jpg";
 import { AiOutlineSend } from "react-icons/ai";
 
 export const Footer = () => {
@@ -28,7 +28,7 @@ export const Footer = () => {
       </div>
       <div className="footInfo">
         <div className="footTipo">
-          <img src={logotipoProv} alt="Logotipo" />
+          <img src={logotipo} alt="Logotipo" />
         </div>
         <div className="footNews">
           <p>Newsletter</p>
