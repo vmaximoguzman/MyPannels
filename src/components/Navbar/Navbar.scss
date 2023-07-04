@@ -7,45 +7,58 @@
   background-image: url("../../images/bgb.jpg");
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 
-  .navLogo {
-    width: 200px;
-    height: auto;
+  .divWidth {
+    width: 70%;
+    height: 100%;
 
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    img {
-      width: 83px;
-      height: 43px;
-      margin-top: 4px;
-    }
-  }
-
-  .navEgation {
-    width: 200px;
-    height: auto;
-
-    ul {
-      list-style: none;
+    .navLogo {
+      width: 200px;
+      height: auto;
 
       display: flex;
-      justify-content: space-around;
+      flex-direction: row-reverse;
+      justify-content: center;
       align-items: center;
-      flex-direction: row;
 
-      margin-top: 8px;
+      img {
+        width: 83px;
+        height: 43px;
+        margin-top: 4px;
+      }
+    }
 
-      li {
-        font-size: 34px;
+    .navEgation {
+      width: 200px;
+      height: auto;
 
-        a {
-          text-decoration: none;
-          color: $colorW;
+      ul {
+        list-style: none;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        margin-top: 8px;
+
+        li {
+          font-size: 34px;
+
+          a {
+            text-decoration: none;
+            color: $colorW;
+            transition: 0.3s;
+
+            &:hover {
+              color: $colorOr;
+            }
+          }
         }
       }
     }
