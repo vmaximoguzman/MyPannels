@@ -1,0 +1,226 @@
+@import "../../variables.scss";
+
+.divHome {
+  width: 100%;
+  height: auto;
+
+  background-color: $colorW;
+
+  .homeBanner {
+    width: 100%;
+    height: 80vh;
+
+    background-image: url("../../images/Banner.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      @include fuentesY(200px, $colorOr, italic, 800);
+      text-shadow: 5px 5px $colorW;
+    }
+
+    span {
+      @include fuentesY(100px, $colorOr, italic, 800);
+      text-shadow: 3px 3px $colorW;
+    }
+  }
+
+  .homeTop {
+    width: 80%;
+    height: auto;
+
+    padding: 50px 0;
+    margin: auto;
+
+    &Title {
+      width: 100%;
+      height: 100px;
+
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      p {
+        width: 200px;
+        height: 68px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+
+        @include fuentesYI(50px, $colorOr, normal, 800);
+        text-shadow: 2px 2px $colorDB;
+
+        border-right: 7px solid black;
+        border-bottom: 7px solid $colorDB;
+        border-radius: 10px;
+      }
+    }
+
+    &Prod {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .posicion {
+        border-radius: 5px;
+        background-image: url("../../images/bgb.jpg");
+
+        .img1 {
+          width: auto;
+          height: 750px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: calc(100% - 10px);
+            height: calc(100% - 20px);
+
+            padding: 5px 10px;
+          }
+        }
+
+        .img2 {
+          width: auto;
+          height: 640px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: calc(100% - 10px);
+            height: calc(100% - 20px);
+
+            padding: 5px 10px;
+          }
+        }
+
+        .img3 {
+          width: auto;
+          height: 575px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: calc(100% - 10px);
+            height: calc(100% - 20px);
+
+            padding: 5px 10px;
+          }
+        }
+      }
+
+      .p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding-bottom: 5px;
+
+        .num {
+          padding: 5px 50px;
+          background-color: $colorW;
+          @include fuentesYI(40px, $colorDB, normal, 900);
+          text-shadow: 2px 2px $colorOr;
+        }
+
+        .name {
+          padding-top: 12px;
+          @include fuentesY(25px, $colorOr, normal, 800);
+          text-shadow: 1.3px 1.3px $colorW;
+        }
+
+        span {
+          @include fuentesYI(25px, $colorOr, normal, 800);
+        }
+      }
+    }
+  }
+
+  .scrollText {
+    width: 100%;
+    height: 340px;
+
+    margin: auto;
+
+    display: flex;
+
+    position: relative;
+
+    overflow: hidden;
+    z-index: 1;
+
+    &__title {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      white-space: nowrap;
+
+      transform: scale(2);
+      transition: all 1s ease;
+
+      div {
+        display: flex;
+        animation: scrollText 33s infinite linear;
+      }
+
+      h1 {
+        margin: 0;
+
+        color: $colorOr;
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 900;
+        // -webkit-text-stroke: 2px $colorOr;
+
+        transition: all 2s ease;
+      }
+
+      a {
+        color: $colorOr;
+        text-decoration: none;
+        letter-spacing: 15px;
+
+        padding: 0 30px;
+
+        &:hover {
+          color: transparent;
+          -webkit-text-stroke: 2px $colorOr;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

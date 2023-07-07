@@ -12,16 +12,16 @@
   flex-direction: column;
 
   .gomenasai {
-    @include fuentes(90px, transparent, italic, 800);
+    @include fuentesY(90px, transparent, italic, 800);
     -webkit-text-stroke: 4px #ff8000;
   }
 
   .errorMessage {
-    @include fuentes(32px, black, normal, 700);
+    @include fuentesY(32px, black, normal, 700);
     letter-spacing: 2px;
   }
 
   .redirecting {
-    @include fuentes(19px, black, normal, 700);
+    @include fuentesY(19px, black, normal, 700);
   }
 }

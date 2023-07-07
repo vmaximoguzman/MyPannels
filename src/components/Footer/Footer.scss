@@ -35,7 +35,7 @@
         line-height: 52px;
 
         li {
-          @include fuentes(23px, $colorW, italic, 600);
+          @include fuentesY(23px, $colorW, italic, 600);
 
           a {
             color: $colorW;
@@ -87,7 +87,7 @@
         p {
           padding-bottom: 10px;
 
-          @include fuentes(30px, $colorW, normal, 600);
+          @include fuentesY(30px, $colorW, normal, 600);
           text-align: center;
         }
 
@@ -129,7 +129,7 @@
             top: 5px;
             left: 10px;
 
-            @include fuentes(20px, $colorW, normal, 600);
+            @include fuentesY(20px, $colorW, normal, 600);
 
             transition: 0.5s;
 
