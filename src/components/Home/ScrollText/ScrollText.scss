@@ -1,0 +1,71 @@
+@import "../../../variables.scss";
+
+.scrollText {
+  width: 100%;
+  height: 340px;
+
+  margin: auto;
+
+  display: flex;
+
+  position: relative;
+
+  overflow: hidden;
+  z-index: 1;
+
+  &__title {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    white-space: nowrap;
+
+    transform: scale(2);
+    transition: all 1s ease;
+
+    div {
+      display: flex;
+      animation: scrollText 33s infinite linear;
+    }
+
+    h1 {
+      margin: 0;
+
+      color: $colorOr;
+      font-size: 140px;
+      font-style: normal;
+      font-weight: 900;
+
+      transition: all 2s ease;
+    }
+
+    a {
+      color: $colorOr;
+      text-decoration: none;
+      letter-spacing: 15px;
+
+      padding: 0 30px;
+
+      &:hover {
+        color: transparent;
+        -webkit-text-stroke: 2px $colorOr;
+      }
+    }
+  }
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
