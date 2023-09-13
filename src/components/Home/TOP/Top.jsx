@@ -88,43 +88,103 @@ export const Top = () => {
         <Slider {...settings}>
           <div className="topSlideR">
             <img src={aoharide} alt="Ao Haru Ride 13" />
-            <p>Ao Haru Ride 13</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Ao Haru Ride 13</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={blackclover} alt="Black Clover 26" />
-            <p>Black Clover 26</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Black Clover 26</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={demonslayer} alt="Demon Slayer 01" />
-            <p>Demon Slayer 01</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Demon Slayer 01</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={haikyu} alt="Haikyu!! 20" />
-            <p>Haikyu!! 20</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Haikyu!! 20</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={hunter} alt="Hunter x Hunter 24" />
-            <p>Hunter X Hunter 24</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Hunter X Hunter 24</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={irumakun} alt="Iruma-Kun 01" />
-            <p>Iruma-Kun 01</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Iruma-kun 01</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={maid} alt="Miss Kobayashi's Dragon Maid 05" />
-            <p>Miss Kobayashi's Dragon Maid 05</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Miss Kobayashi's Dragon Maid 05</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={psycho} alt="Mob Psycho 100 08" />
-            <p>Mob Psycho 100 08</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Mob Psycho 100 08</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={kings} alt="Ranking of Kings 09" />
-            <p>Ranking of Kings 09</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Ranking of Kings 09</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
           <div className="topSlideR">
             <img src={vagabond} alt="Vagabond 12" />
-            <p>Vagabond 12</p>
+            <div className="topSlideBg">
+              <div className="topSlideBgColor">
+                <p className="title">Vagabond 12</p>
+                <p className="price">$2500</p>
+                <p className="addCart">Agregar al Carrito</p>
+              </div>
+            </div>
           </div>
         </Slider>
       </div>

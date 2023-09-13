@@ -55,27 +55,85 @@
         width: 85%;
         height: 90%;
 
-        border: 6px solid #cdcdcd;
-        border-radius: 5px;
+        margin-bottom: 45px;
 
-        margin-bottom: 10px;
+        border-radius: 5px;
       }
     }
-  }
-}
 
-@keyframes turn {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.65;
-    transform: scale(-0.5, 0.5);
-  }
-  to {
-    opacity: 0.3;
-    transform: scale(-1, 1);
-    animation-play-state: paused;
+    &Bg {
+      width: 3.55%;
+      height: 100%;
+
+      position: absolute;
+
+      display: flex;
+      align-items: end;
+
+      &Color {
+        width: 100%;
+        height: fit-content;
+
+        padding: 15px 0;
+
+        background-color: $colorDB;
+
+        border-bottom: 3px solid $colorDW;
+        border-radius: 0 0 5px 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          @include fuentesYI(1.3em, $colorOr, normal, 800);
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          text-shadow: 1.7px 1.4px black;
+          text-align: center;
+          padding: 0 10px;
+        }
+
+        .price {
+          @include fuentesYI(19px, $colorW, normal, 600);
+          margin: 5px 0 11px 0;
+        }
+
+        .addCart {
+          width: 90%;
+          height: 35px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: $colorOr;
+
+          @include fuentesYI(16px, $colorW, normal, 800);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+
+          border-radius: 2.5px;
+          // border-bottom: 3px solid $colorDOr;
+
+          &:hover {
+            cursor: pointer;
+            // border: 0;
+
+            background-color: white;
+            color: $colorOr;
+            // background-color: transparent;
+            border: 2px solid $colorOr;
+          }
+
+          &:active {
+            background-color: $colorOr;
+            border-color: white;
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
