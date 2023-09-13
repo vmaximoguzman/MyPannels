@@ -14,16 +14,16 @@ export const Footer = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/directory">Directory</NavLink>
+              <NavLink to="/directory">Directorio</NavLink>
             </li>
             <li>
               <NavLink to="/faq">FAQ</NavLink>
             </li>
             <li>
-              <NavLink to="/calendar">Calendar</NavLink>
+              <NavLink to="/calendar">Calendario</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact">Contacto</NavLink>
             </li>
           </ul>
         </div>

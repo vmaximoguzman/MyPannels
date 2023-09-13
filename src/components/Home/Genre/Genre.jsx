@@ -58,7 +58,7 @@ export const Genre = () => {
         <div className="genreCatEgory">
           <div className="genreCatP">
             <p>もっと!</p>
-            <span>¡More Genres!</span>
+            <span>¡Más Generos!</span>
           </div>
 
           <img src={MasCat} alt="Más Categorías" />

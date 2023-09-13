@@ -5,7 +5,7 @@ export const Banner = () => {
   return (
     <div className="banner">
       <p>MyPanels!</p>
-      <span>Coming soon...</span>
+      <span>Próximamente...</span>
     </div>
   );
 };
