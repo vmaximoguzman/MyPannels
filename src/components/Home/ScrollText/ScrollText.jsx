@@ -12,21 +12,21 @@ export const ScrollText = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Ivrea
+              Ivrea ·
             </a>
             <a
               href="https://tiendapanini.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
-              Panini
+              Panini ·
             </a>
             <a
               href="https://www.ovnipress.net/"
               target="_blank"
               rel="noreferrer"
             >
-              Ovni
+              Ovni ·
             </a>
           </h1>
           <h1>
@@ -35,21 +35,21 @@ export const ScrollText = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Ivrea
+              Ivrea ·
             </a>
             <a
               href="https://tiendapanini.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
-              Panini
+              Panini ·
             </a>
             <a
               href="https://www.ovnipress.net/"
               target="_blank"
               rel="noreferrer"
             >
-              Ovni
+              Ovni ·
             </a>
           </h1>
         </div>

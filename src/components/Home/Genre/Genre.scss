@@ -1,1 +1,94 @@
 @import "../../../variables.scss";
+
+.genre {
+  width: 100%;
+  height: auto;
+
+  padding-bottom: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Title {
+    width: 92%;
+    height: 80px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      width: 250px;
+      height: 90px;
+
+      @include fuentesYI(60px, $colorOr, normal, 800);
+      text-shadow: 3px 1.5px $colorDB;
+      text-align: center;
+
+      border-left: 7px solid black;
+      border-bottom: 7px solid $colorDB;
+      border-radius: 6px;
+    }
+  }
+
+  &Cat {
+    width: 90%;
+    height: auto;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 100px;
+
+    padding-top: 80px;
+
+    &Egory {
+      width: 400px;
+      height: 400px;
+
+      border-radius: 10px;
+
+      transition: 0.18s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(80%);
+      }
+
+      img {
+        width: inherit;
+        height: inherit;
+
+        border: 3px solid $colorDW;
+        border-radius: 10px;
+      }
+    }
+
+    &P {
+      width: inherit;
+      height: inherit;
+
+      position: absolute;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      text-align: center;
+
+      p {
+        @include fuentesY(70px, $colorOr, normal, 800);
+        text-shadow: 2.5px 2.5px $colorW;
+        letter-spacing: 6px;
+      }
+
+      span {
+        @include fuentesY(45px, $colorOr, normal, 800);
+        text-shadow: 2px 2px $colorDB;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
