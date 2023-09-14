@@ -1,1 +1,19 @@
 @import "../../../variables.scss";
+
+.direcBanner {
+  width: 100%;
+  height: 19em;
+
+  background-image: url("../../../images/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  p {
+    @include fuentesY(150px, $colorOr, italic, 800);
+    text-shadow: 5px 5px $colorW;
+    text-align: center;
+    letter-spacing: 8px;
+
+    padding-top: 0.2em;
+  }
+}
