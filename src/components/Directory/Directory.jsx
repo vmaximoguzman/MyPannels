@@ -1,10 +1,17 @@
 import React from "react";
+import "./Directory.scss";
+import { Search } from "./Search/Search";
+import { Products } from "./Products/Products";
+import { DirecBanner } from "./Banner/DirecBanner";
 
 export const Directory = () => {
   return (
-    <div>
-      DIRECTORIO CON BUSQUEDA DE MANGAS POR NOMBRE, FILTRADO DE MANGAS POR
-      GENERO Y ORDENAMIENTO DE MANGAS DE A - Z / Z - A
+    <div className="divDirectory">
+      <DirecBanner />
+
+      <Search />
+
+      <Products />
     </div>
   );
 };
