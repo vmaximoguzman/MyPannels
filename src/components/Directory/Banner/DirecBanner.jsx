@@ -4,7 +4,7 @@ import "./DirecBanner.scss";
 export const DirecBanner = () => {
   return (
     <div className="direcBanner">
-      <p>Directory</p>
+      <p>Directorio</p>
     </div>
   );
 };
