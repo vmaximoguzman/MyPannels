@@ -1,9 +1,9 @@
 import React from "react";
-import "./Banner.scss";
+import "./HomeBanner.scss";
 
-export const Banner = () => {
+export const HomeBanner = () => {
   return (
-    <div className="banner">
+    <div className="homeBanner">
       <p>MyPanels!</p>
       <span>Próximamente...</span>
     </div>
