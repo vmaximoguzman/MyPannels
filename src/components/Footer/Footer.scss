@@ -105,10 +105,9 @@
 
             margin: 0 0 0 5px;
             margin-bottom: 30px;
-            padding: 10px 5px;
+            padding: 7px 5px;
 
-            font-size: 16px;
-            color: #fff;
+            @include fuentesYI(20px, transparent, normal, 500);
 
             background: transparent;
             outline: none;
@@ -121,6 +120,10 @@
 
               font-size: 16px;
               color: $colorOr;
+            }
+
+            &:focus-visible {
+              @include fuentesYI(20px, $colorW, normal, 500);
             }
           }
 
