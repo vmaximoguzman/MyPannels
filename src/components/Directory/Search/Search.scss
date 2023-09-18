@@ -1,0 +1,148 @@
+@import "../../../variables.scss";
+
+.divSearch {
+  width: 100%;
+  height: 20em;
+
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c c";
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(2, 50%);
+  place-items: center;
+
+  margin: 1em 0;
+
+  .filter {
+    width: 70%;
+    height: 100%;
+
+    grid-area: a;
+
+    // border: 2px dotted black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      width: 80%;
+      height: 28%;
+
+      padding-top: 5px;
+
+      background-color: $colorOr;
+
+      @include fuentesY(20px, $colorW, normal, 800);
+      text-align: center;
+      text-transform: uppercase;
+
+      border-bottom: 5px solid $colorDOr;
+      border-radius: 8px;
+
+      margin-bottom: 25px;
+
+      &:active {
+        background-color: $colorLOr;
+        border-bottom: 0;
+        padding-top: 7px;
+      }
+    }
+  }
+
+  .search {
+    width: 70%;
+    height: 100%;
+
+    grid-area: b;
+
+    // border: 2px dotted black;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    form {
+      width: 100%;
+
+      position: relative;
+
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: center;
+
+      input {
+        width: 75%;
+
+        margin: 0 0 30px 5px;
+        padding: 5px 8px;
+
+        background: transparent;
+        outline: none;
+        // border: 1px dotted black;
+        border: none;
+        border-bottom: 1px solid $colorDB;
+        @include fuentesYI(20px, transparent, normal, 500);
+
+        &:focus ~ label {
+          top: -20px;
+          left: 13%;
+
+          font-size: 16px;
+          color: $colorDB;
+        }
+
+        &:focus-visible {
+          @include fuentesYI(20px, $colorOr, normal, 500);
+        }
+      }
+
+      label {
+        width: 75%;
+        position: absolute;
+        top: 4px;
+        left: 14%;
+
+        // border: 1px dotted black;
+
+        @include fuentesY(20px, $colorOr, normal, 600);
+
+        transition: 0.5s;
+
+        pointer-events: none;
+      }
+
+      button {
+        position: absolute;
+        top: 6px;
+        right: 6%;
+
+        font-size: 28px;
+        color: $colorOr;
+
+        background-color: transparent;
+        outline: none;
+        border: none;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+
+        &:hover {
+          color: $colorDB;
+        }
+      }
+    }
+  }
+
+  .searchGenres {
+    width: 85%;
+    height: 200px;
+
+    grid-area: c;
+
+    border: 2px dotted black;
+  }
+}
